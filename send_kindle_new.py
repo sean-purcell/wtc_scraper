@@ -54,7 +54,7 @@ def send_chapters_since(prev):
 
     print('%d new chapters' % len(chapters))
 
-    latest = 0
+    latest = prev
     for idx, name, content in chapters:
         print('Sending %s to %s from %s' % (name, dest, uname))
 
