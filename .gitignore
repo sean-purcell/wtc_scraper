@@ -3,3 +3,4 @@ previous
 __pycache__
 env
 .*.sw*
+*.html

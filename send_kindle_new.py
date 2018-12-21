@@ -63,6 +63,8 @@ def send_chapters_since(prev):
         with open(fname, 'w') as f:
             f.write(formatted)
 
+        kindle.send_ebook(uname, pw, dest, fname)
+
         latest = max(idx, latest)
 
     return latest
